@@ -2,9 +2,22 @@
 
 /* 헤더구역, 푸터구역 등 기타 공통구역에 대한 스타일 */
 .row {max-width: 1300px; margin: 0 auto;}
+
 #header {width: 100%; top:0; left:0; color: #ccc;
-    background-image: url(../images/headerbg.jpg) ;
     background-size:cover ;
     background-position: center;
-    background-repeat: no-repeat;}
-.topmenu .sns {top:0; right:0;}
+    background-repeat: no-repeat;
+    }
+
+.topmenu .cf {height: 40px; padding: 5px 15px 0 15px;} 
+.topmenu .phone {float: left;} /*float:right는 뒤집힌다 */
+.topmenu .sns { float: left;}
+.topmenu .sns a {margin: 5px;}
+.topmenu .phone span {font-size: 13.5px; margin-right: 20px;}
+.topline {float: right;}
+
+.logonav { border-top: 1px dotted rgba(180, 180, 180, 0.2);}
+.logonav {height: 70px;}
+.logonav .nav .depth1 > li {float: right;}
+.logonav .nav .depth1 > li > a { text-align: center; font: 15px; font-weight: 600; display: block;
+    padding: 0 50px; }
