@@ -1,0 +1,5 @@
+@charset "utf-8";
+@import "reset.css";  /* common 보다 먼저 읽혀야 된다 */
+@import "common.css";
+
+/*공통구역을 제외한 메인페이지 스타일 */
