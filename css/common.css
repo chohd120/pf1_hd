@@ -1,4 +1,10 @@
 @charset "utf-8";
-@import "common.css";
 
 /* 헤더구역, 푸터구역 등 기타 공통구역에 대한 스타일 */
+.row {max-width: 1300px; margin: 0 auto;}
+#header {width: 100%; top:0; left:0; color: #ccc;
+    background-image: url(../images/headerbg.jpg) ;
+    background-size:cover ;
+    background-position: center;
+    background-repeat: no-repeat;}
+.topmenu .sns {top:0; right:0;}
