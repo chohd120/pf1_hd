@@ -5,10 +5,8 @@
 
 #header {width: 100%; top:0; left:0; 
     color: #ccc;
-    background-size:cover ;
-    background-position: center;
-    background-repeat: no-repeat;
-    }
+    position: fixed;
+    z-index: 99999;}
 
 .topmenu .cf {height: 40px; padding: 5px 15px 0 15px;} 
 .topmenu .phone {float: left;} /*float:right는 뒤집힌다 */
@@ -18,23 +16,23 @@
 .topline {float: right;}
 
 
-.logonav { border-top: 1px dotted rgba(180, 180, 180, 0.2);
-    height: 70px;}
+.logonav { border-top: 1px dotted rgba(180, 180, 180, 0.5);
+    height: 70px;
+    display: block}
 
-.logonav .h1nav .logo_area p {border: 1px solid #f00; display: inline-block;
-    background: transparent; }
+/* .logonav .h1nav .logo_area p img {vertical-align: middle;} */
 
-.logonav .nav .depth1 > li {float: right; }
-.logonav .nav .depth1 > li:hover { color: rgba(180, 180, 180, 0.2);}
+.logonav .nav .depth1 > li {float: right; position: relative;}
+.logonav .nav .depth1 > li:hover { color: #fff;}
 .logonav .nav .depth1 > li > a { text-align: center; font: 15px; font-weight: 600; display: block;
     padding: 0 50px; }
-.logonav .depth1 > li .depth2 {display: none;}
+.logonav .depth1 > li .depth2 {display: none; position: absolute; top: 100%; left: 0; width: 100%;}
 .logonav .depth1 > li:hover .depth2 { display:block ; color: rgba(180, 180, 180, 1);
     z-index: 999999;}
 
 .logonav .nav .depth2 > li > a { display: block;  text-align: center; margin: 0 20px;
     border-bottom: 1px solid #ccc; line-height: 40px;}
-.logonav .nav .depth2 > li:hover {color: rgba(0, 0, 0, 0.25);
-    text-indent: 1em;}
+.logonav .nav .depth2 > li:hover {color:#fff;
+    text-indent: 0.5em;}
 .logonav .nav .depth2 > li:first-child {margin-top: 30px;}
 
