@@ -15,24 +15,30 @@
 .topmenu .phone span {font-size: 13.5px; margin-right: 20px;}
 .topline {float: right;}
 
-
-.logonav { border-top: 1px dotted rgba(180, 180, 180, 0.5);
+.logonav {border-top: 1px dotted rgba(180, 180, 180, 0.5);}
+.logonav h1{ 
     height: 70px;
-    display: block}
+    line-height: 70px;
+    width: 20%; float: left;}
+
 
 /* .logonav .h1nav .logo_area p img {vertical-align: middle;} */
-
-.logonav .nav .depth1 > li {float: right; position: relative;}
+.logonav .nav {float: right; width: 70%;}
+.logonav .nav .depth1 > li {float: left; position: relative;}
 .logonav .nav .depth1 > li:hover { color: #fff;}
 .logonav .nav .depth1 > li > a { text-align: center; font: 15px; font-weight: 600; display: block;
-    padding: 0 50px; }
-.logonav .depth1 > li .depth2 {display: none; position: absolute; top: 100%; left: 0; width: 100%;}
+    padding: 0 50px; line-height: 70px;}
+.logonav .depth1 > li .depth2 {display: none; position: absolute; top: 100%; left: 0; width: 100%;
+    }
 .logonav .depth1 > li:hover .depth2 { display:block ; color: rgba(180, 180, 180, 1);
-    z-index: 999999;}
+    z-index: 999999; }
 
 .logonav .nav .depth2 > li > a { display: block;  text-align: center; margin: 0 20px;
-    border-bottom: 1px solid #ccc; line-height: 40px;}
+     line-height: 40px;border-bottom: 1px solid #fff; }
 .logonav .nav .depth2 > li:hover {color:#fff;
     text-indent: 0.5em;}
 .logonav .nav .depth2 > li:first-child {margin-top: 30px;}
+
+
+
 
