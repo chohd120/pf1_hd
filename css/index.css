@@ -33,9 +33,8 @@
     margin: 50px 10px 0; padding: 20px 40px;
     display: inline-block; border: 2px solid rgb(211, 208, 208); border-radius: 3em;
     background: none;}
-.slide .text .btn button:hover { background: #;
 
-}
+.slide .text .btn:hover button { background: #000; border: none; opacity: 0.7;}
 
 /* --------------------- container ----------------------*/
 .container {padding: 80px 50px }
