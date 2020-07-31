@@ -32,7 +32,8 @@
     color:rgb(211, 208, 208); 
     margin: 50px 10px 0; padding: 20px 40px;
     display: inline-block; border: 2px solid rgb(211, 208, 208); border-radius: 3em;
-    background: none;}
+    background: none;
+    }
 
 .slide .text .btn:hover button { background: #000; border: none; opacity: 0.7;}
 
@@ -53,7 +54,8 @@
 .container .text .learnmore button { margin-top: 20px; padding: 15px 50px;
     border: 1px solid #a3bece; font-size: 14px; border-radius: 3em;
     color: #999; cursor: pointer;
-    background: none;}
+    background: none;
+    transition: all 0.5s;}
 
 .container .text .learnmore button:hover {color: #fff;
     font-size: 14px;
