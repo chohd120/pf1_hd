@@ -62,25 +62,32 @@
 
 
 /* --------------------- ideology ----------------------*/
-.ideology ul li {float: left; width: 33.33%; height: 350px;
-    background-size:cover;
-    background-repeat:no-repeat;
-    text-align: center;
-    vertical-align: middle;
-    position: relative;}
+.ideology img {width: 100%;}
+.interactive, .emotion, .essential {position: relative;}
+.interactive, .emotion, .essential {float: left; position: relative;
+    width: 33.33%;}
 
-.ideology .text{ color: #fff; position: absolute; top: 50%; left: 50%;
-    transform: translate(-50%, -50%);}
+.overlay {position: absolute; top: 0; right: 0; left: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0);}
+.interactive:hover .overlay {
+    background: rgba(0, 0, 0, 0.7);}
+.emotion:hover .overlay {
+    background: rgba(0, 0, 0, 0.7);}
+.essential:hover .overlay {
+    background: rgba(0, 0, 0, 0.7);}
+
+.ideology .text{ position:absolute; 
+    top:50%; left:50%; transform: translate(-50%, -50%);
+    color: #fff; text-align: center;
+    font-weight: 600;}
 
 .ideology h3 {
     font-size: 1.6em;
     font-weight: 500;}
 
-.ideology p {font-size: 15px; font-weight: 400;}
+.ideology p {font-size: 15px; font-weight: 400;
+    margin-top: 10px;}
 
-.ideology ul li:nth-child(1) { background-image: url(../images/con_08_1.jpg);}
-.ideology ul li:nth-child(2) { background-image: url(../images/con_08_2.jpg);}
-.ideology ul li:nth-child(3) { background-image: url(../images/con_08_3.jpg);}
 
 
 /* --------------------- board ----------------------*/
@@ -113,23 +120,50 @@
     width: 25%; color: #777;}
 
 /* ----------------------contact -------------------------*/
-.contact .contactbox { margin: 50px 0;
+.cs .csbox { margin: 50px 0;
     padding-bottom: 30px;
     color: #555;
     text-align: center;
     border-top: 1px solid #ccc;}
-.contact .contactbox span:before {
+.cs .csbox span:before {
     content: '\f098'; 
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     color: #777;
 }
-.contact .contactbox h2 {
+.cs .csbox h2 {
     font-size: 23px; margin-top: 50px;
     color: #555;
     font-weight: normal;
 }
-.contact .contactbox p {
+.cs .csbox p {
     font-size: 14px; margin-top: 15px;
     color: #666;
 }
+
+/*----------------------------------- footer -------------------------------*/
+/*---------------- footerinfo ----------------*/
+
+.footerinfo { padding: 40px 0;
+    background: #39454b;
+    color: #bbb;
+    height: 225px;
+    }
+.footerinfo h3 {font-size: 1.1em;
+    font-weight: 600;
+    padding-bottom: 10px;}
+.footerinfo  p {padding-top: 10px;}
+
+.footerwrap > .contact, .footerwrap > .info, .footerwrap > .sns {float: left;
+    padding: 0 15px; width: 33.33%;}
+
+.info p:nth-of-type(2)::before, .info p:nth-of-type(3)::before  {content: '·';}
+.icons a {margin: 0 7px;}
+
+/*----------------footerbot ------------------*/
+.footerbot { color: #666;
+    padding: 30px 0;
+    font-size: 13px;
+    line-height: 2;
+    letter-spacing: -1px;}
+
