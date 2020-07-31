@@ -69,7 +69,7 @@
     width: 33.33%;}
 
 .overlay {position: absolute; top: 0; right: 0; left: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0);}
+    background: rgba(0, 0, 0, 0); transition: all 0.5s;}
 .interactive:hover .overlay {
     background: rgba(0, 0, 0, 0.7);}
 .emotion:hover .overlay {
