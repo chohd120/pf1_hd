@@ -3,3 +3,13 @@
 @import "common.css";
 
 #joinpage {padding: 200px 0;}
+.joininfo {border: 1px solid #ccc;}
+.joininfo .tit_lbl { display: inline-block; width: 20%; line-height: 35px;
+    text-align: center;}
+.joininfo .infocontent { display: inline-block; width: 79% ; vertical-align: top; 
+     lime;}
+.joininfo .infocontent input[type=text],
+.joininfo .infocontent input[type=password],
+.joininfo .infocontent input[type=date],
+.joininfo .infocontent select { height:30px; border: 1px solid #555; }
+.joininfo .w150 {width: 150px;}
