@@ -1,170 +1,52 @@
 @charset "utf-8";
-@import "reset.css";  /* common 보다 먼저 읽혀야 된다 */
+@import "reset.css";
+/* common 보다 먼저 읽혀야 된다 */
 @import "common.css";
 
-/*공통구역을 제외한 메인페이지 스타일 */
 
-.slide {width: 100%; height: 1098px; overflow: hidden;}
-
-.slide .slideinner { position: relative;
-    background-size: cover;
-    background-repeat: no-repeat; height: 1098px;}
-
-.slide .slideinner:nth-child(1) { 
-    background-image: url(../images/main_01.jpg);  }
-
-.slide .slideinner:nth-child(2) { 
-    background-image: url(../images/main_02.jpg);  }
-
-.slide .slideinner:nth-child(3) { 
-    background-image: url(../images/main_03.jpg);  } 
-
-.slide .text {text-align: center; 
-    position: absolute; top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-    color:rgb(211, 208, 208); } 
-
-.slide .text h1 {font-size: 63px;  } 
-
-.slide .text h1 > span {font-weight: normal;}
-
-.slide .text .btn button{ font-size: 14px; padding: 3px 0; font-weight: 600;
-    color:rgb(211, 208, 208); 
-    margin: 50px 10px 0; padding: 20px 40px;
-    display: inline-block; border: 2px solid rgb(211, 208, 208); border-radius: 3em;
-    background: none;
-    }
-
-.slide .text .btn:hover button { background: #000; border: none; opacity: 0.7;}
-
-/* --------------------- container ----------------------*/
-.container {padding: 80px 50px }
-
-.container img {width: 100%;}
-
-.container .text {float: left; width: 33.33%;}
-
-.container .box_second {float: left; width: 33.33%; padding: 0 50px;}
-
-.container .text > h1 {font-weight: 600; font-size: 30px; color: #222;
-    letter-spacing: -1px; line-height: 1.3em; padding-bottom: 20px; margin-top: 20px;}
-
-.container .text > p { font-size: 15px; margin: 20px 0 10px; color: #666;}
-
-.container .text .learnmore button { margin-top: 20px; padding: 15px 50px;
-    border: 1px solid #a3bece; font-size: 14px; border-radius: 3em;
-    color: #999; cursor: pointer;
-    background: none;
-    transition: all 0.5s;}
-
-.container .text .learnmore button:hover {color: #fff;
-    font-size: 14px;
-    background: #a3bece;}
-
-
-/* --------------------- ideology ----------------------*/
-.ideology img {width: 100%;}
-.interactive, .emotion, .essential {position: relative;}
-.interactive, .emotion, .essential {float: left; position: relative;
-    width: 33.33%;}
-
-.overlay {position: absolute; top: 0; right: 0; left: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0); transition: all 0.5s;}
-.interactive:hover .overlay {
-    background: rgba(0, 0, 0, 0.7);}
-.emotion:hover .overlay {
-    background: rgba(0, 0, 0, 0.7);}
-.essential:hover .overlay {
-    background: rgba(0, 0, 0, 0.7);}
-
-.ideology .text{ position:absolute; 
-    top:50%; left:50%; transform: translate(-50%, -50%);
-    color: #fff; text-align: center;
-    font-weight: 600;}
-
-.ideology h3 {
-    font-size: 1.6em;
-    font-weight: 500;}
-
-.ideology p {font-size: 15px; font-weight: 400;
-    margin-top: 10px;}
-
-
-
-/* --------------------- board ----------------------*/
-.innerboard {margin-top: 50px;}
-.marketing, .gallery, .notice {float: left; width: 33.33%; padding: 0 15px; }
-.board h2 {color: #555; font-size: 1.1em; padding-bottom: 10px; border-bottom: 1px solid #ccc;}
-.board .marketing h2 {border: none;}
-.board p {color: #666; padding-top: 15px;}
-.board .gallery .gallery_imgbox {padding-top: 15px;}
-.board .gallery a img { width: 31%; margin: 0 0.6666%;}
-
-.notice .boardbox {padding-top: 15px;}
-.notice td:first-child {
-    white-space: nowrap; overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: 15px;
-    color: #333;
-    width: 65%;
-    }
-
-.notice td:first-child a::before {
-    content: '\f0da'; 
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    font-size: 10px;
-    color: #777;
-    padding-right: 5px;}
-
-.notice td:last-child { font-size: 13px; text-align: right;
-    width: 25%; color: #777;}
-
-/* ----------------------contact -------------------------*/
-.cs .csbox { margin: 50px 0;
-    padding-bottom: 30px;
-    color: #555;
-    text-align: center;
-    border-top: 1px solid #ccc;}
-.cs .csbox span:before {
-    content: '\f098'; 
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    color: #777;
-}
-.cs .csbox h2 {
-    font-size: 23px; margin-top: 50px;
-    color: #555;
-    font-weight: normal;
-}
-.cs .csbox p {
-    font-size: 14px; margin-top: 15px;
-    color: #666;
-}
 
 /*----------------------------------- footer -------------------------------*/
 /*---------------- footerinfo ----------------*/
 
-.footerinfo { padding: 40px 0;
+.footerinfo {
+    padding: 40px 0;
     background: #39454b;
     color: #bbb;
     height: 225px;
-    }
-.footerinfo h3 {font-size: 1.1em;
+}
+
+.footerinfo h3 {
+    font-size: 1.1em;
     font-weight: 600;
-    padding-bottom: 10px;}
-.footerinfo  p {padding-top: 10px;}
+    padding-bottom: 10px;
+}
 
-.footerwrap > .contact, .footerwrap > .info, .footerwrap > .sns {float: left;
-    padding: 0 15px; width: 33.33%;}
+.footerinfo p {
+    padding-top: 10px;
+}
 
-.info p:nth-of-type(2)::before, .info p:nth-of-type(3)::before  {content: '·';}
-.icons a {margin: 0 7px;}
+.footerwrap>.contact,
+.footerwrap>.info,
+.footerwrap>.sns {
+    float: left;
+    padding: 0 15px;
+    width: 33.33%;
+}
+
+.info p:nth-of-type(2)::before,
+.info p:nth-of-type(3)::before {
+    content: '·';
+}
+
+.icons a {
+    margin: 0 7px;
+}
 
 /*----------------footerbot ------------------*/
-.footerbot { color: #666;
+.footerbot {
+    color: #666;
     padding: 30px 0;
     font-size: 13px;
     line-height: 2;
-    letter-spacing: -1px;}
-
+    letter-spacing: -1px;
+}
