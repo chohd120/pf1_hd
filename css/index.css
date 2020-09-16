@@ -247,7 +247,20 @@
     border-bottom: 1px solid #ccc;
 }
 
-.board .marketing h2 {
+.board h2>a {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.board .pmore {
+    margin-left: 205px;
+}
+
+.board .nmore {
+    margin-left: 305px;
+}
+
+.board .nmore .board .marketing h2 {
     border: none;
 }
 
