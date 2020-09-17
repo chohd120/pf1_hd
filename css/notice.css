@@ -34,8 +34,6 @@
   background: #999;
   transition: all 0.5s;
 }
-.customerBox p:hover {
-}
 
 .noticePage h2 {
   font-size: 30px;
@@ -71,7 +69,9 @@
   vertical-align: middle;
 }
 
-.noticeTable {
+.noticeTable table {
+  border: none;
+  font-size: 14px;
   margin-top: 30px;
 }
 
@@ -93,12 +93,6 @@
 
 .noticeTable col:nth-child(5) {
   width: 5%;
-}
-
-.noticeTable table {
-  border: none;
-  font-size: 14px;
-  margin-top: 50px;
 }
 
 .noticeTable th,
