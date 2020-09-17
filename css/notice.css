@@ -1,11 +1,149 @@
 @charset "utf-8";
 
+.noticebg {
+  width: 100%;
+  height: 300px;
+  background-image: url(../images/noticebg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .noticePage {
-    padding: 300px 0px;
+  padding-bottom: 100px;
+}
+.customerBox {
+  width: 15%;
+  margin-left: 200px;
+  text-align: center;
+  padding: 0 50px;
+}
+.customerBox h2 {
+  height: 60px;
+  color: #fff;
+  line-height: 60px;
+  font-size: 23px;
+  font-weight: 700;
+  background: #5b95c9;
+  border-bottom: 2px solid #fff;
+}
+.customerBox p {
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+  font-size: 15px;
+  background: #999;
+  transition: all 0.5s;
+}
+.customerBox p:hover {
 }
 
 .noticePage h2 {
-    text-align: center;
-    font-size: 30px;
-    margin: 50px 0 20px;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+.noticePage p {
+  font-size: 20px;
+}
+
+.sbox {
+  text-align: right;
+}
+
+.sbox select {
+  height: 30px;
+  vertical-align: middle;
+}
+
+.sbox input[type="text"] {
+  height: 30px;
+  width: 300px;
+  text-indent: 1em;
+  vertical-align: middle;
+  border: 1px solid #999;
+  border-radius: 5px;
+}
+
+.sbox input[type="submit"] {
+  height: 30px;
+  background: #ddd;
+  padding: 0 8px;
+  border-radius: 5px;
+  vertical-align: middle;
+}
+
+.noticeTable {
+  margin-top: 30px;
+}
+
+.noticeTable col:nth-child(1) {
+  width: 8%;
+}
+
+.noticeTable col:nth-child(2) {
+  width: auto;
+}
+
+.noticeTable col:nth-child(3) {
+  width: 13%;
+}
+
+.noticeTable col:nth-child(4) {
+  width: 13%;
+}
+
+.noticeTable col:nth-child(5) {
+  width: 5%;
+}
+
+.noticeTable table {
+  border: none;
+  font-size: 14px;
+  margin-top: 50px;
+}
+
+.noticeTable th,
+.noticeTable td {
+  border-top: 1px solid #ddd;
+  padding: 10px 5px;
+}
+
+.noticeTable tbody td:nth-child(1),
+.noticeTable tbody td:nth-child(3),
+.noticeTable tbody td:nth-child(4),
+.noticeTable tbody td:nth-child(5) {
+  text-align: center;
+}
+
+.noticeTable th {
+  background: #f2f2f2;
+  border-top: 1px solid #999;
+}
+
+.noticeTable tbody tr:hover {
+  background: #f2f2f2;
+}
+
+.noticePage .numlist {
+  text-align: center;
+  margin: 100px 0 50px 0;
+  font-size: 16px;
+}
+
+.noticePage .numlist span {
+  background: #ddd;
+  padding: 5px 8px;
+  display: inline-block;
+}
+
+.noticePage .numlist a {
+  display: inline-block;
+  padding: 5px 8px;
+}
+
+.noticePage .numlist a:hover {
+  background: #ddd;
+}
+
+.noticePage .numlist a.on {
+  background: #ddd;
 }
