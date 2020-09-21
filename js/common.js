@@ -34,4 +34,11 @@
     return false
   })
 
+  $('.companyPage .companyBox > a').on('click', function () {
+    var url = $(this).attr('href')
+    $('#container').remove()
+    $('#containerBox').load(url);
+    return false
+  })
+
 })(jQuery);

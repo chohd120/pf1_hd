@@ -81,6 +81,7 @@
 .logonav .nav .depth1>li {
     float: left;
     position: relative;
+    transition: all 0.5s;
 }
 
 .logonav .nav .depth1>li:hover {
@@ -106,22 +107,27 @@
     background: rgba(0, 0, 0, 0.8);
 }
 
+.logonav .nav .depth2>li {
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    transition: all 0.5s;
+    margin: 0 20px;
+}
+
 .logonav .depth1>li:hover .depth2 {
     display: block;
     z-index: 999999;
 }
 
-.logonav .nav .depth2>li {
-    display: block;
-    text-align: center;
-    line-height: 40px;
-    border-bottom: 1px dotted #ccc;
+.logonav .nav .depth2 .borderb {
+    border-bottom: 1px dotted #666;
 }
 
 
 .logonav .nav .depth2>li:hover {
     color: #fff;
-    text-indent: 0.5em;
+    text-indent: -0.5em;
 }
 
 
