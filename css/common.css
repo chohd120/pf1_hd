@@ -101,7 +101,7 @@
     display: none;
     position: absolute;
     top: 100%;
-    left: 0;
+    left: 0%;
     width: 100%;
     color: rgb(180, 180, 180, 1);
     background: rgba(0, 0, 0, 0.8);
@@ -127,7 +127,7 @@
 
 .logonav .nav .depth2>li:hover {
     color: #fff;
-    text-indent: -0.5em;
+    font-size: 17px;
 }
 
 
