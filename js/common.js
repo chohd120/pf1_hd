@@ -19,4 +19,19 @@
   });
 
   $("#containerBox").load("main.html");
+
+  $('.nav .depth1 > li > a').on('click', function () {
+    var url = $(this).attr('href')
+    $('#container').remove()
+    $('#containerBox').load(url);
+    return false
+  });
+
+  $('.nav .depth2 > li > a').on('click', function () {
+    var url = $(this).attr('href')
+    $('#container').remove()
+    $('#containerBox').load(url);
+    return false
+  })
+
 })(jQuery);
