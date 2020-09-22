@@ -37,11 +37,11 @@
   $('.depth1 > li').hover(
     function () {
       $(this).find('.depth2')
-        .stop().slideDown(700)
+        .stop().slideDown(300)
     },
     function () {
       $(this).find('.depth2')
-        .stop().slideUp(500)
+        .stop().slideUp(300)
     }
   )
 })(jQuery);

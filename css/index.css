@@ -117,7 +117,8 @@
     width: 100%;
 }
 
-.service .text {
+.service .box_first,
+.service .box_third {
     float: left;
     width: 33.33%;
 }
@@ -128,7 +129,8 @@
     padding: 0 50px;
 }
 
-.service .text>h1 {
+.service .box_first>h1,
+.service .box_third>h1 {
     font-weight: 600;
     font-size: 30px;
     color: #222;
@@ -138,13 +140,15 @@
     margin-top: 20px;
 }
 
-.service .text>p {
+.service .box_first>p,
+.service .box_third>p {
     font-size: 15px;
     margin: 20px 0 10px;
     color: #666;
 }
 
-.service .text .learnmore button {
+.service .box_first .learnmore button,
+.service .box_third .learnmore button {
     margin-top: 20px;
     padding: 15px 50px;
     border: 1px solid #a3bece;
@@ -156,10 +160,45 @@
     transition: all 0.5s;
 }
 
-.service .text .learnmore button:hover {
+.service .box_first .learnmore button:hover,
+.service .box_third .learnmore button:hover {
     color: #fff;
     font-size: 14px;
     background: #a3bece;
+}
+
+.content {
+    overflow: hidden;
+}
+
+.content .box_first {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+}
+
+.content .box_second {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+}
+
+.content .box_third {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+}
+
+.content.on .box_first {
+    animation: fadeInLeft 1s both;
+}
+
+.content.on .box_second {
+    animation: fadeInUp 1s both;
+}
+
+.content.on .box_third {
+    animation: fadeInRight 1s both;
 }
 
 

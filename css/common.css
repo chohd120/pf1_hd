@@ -123,10 +123,11 @@
     margin: 0 20px;
 }
 
-.logonav .depth1>li:hover .depth2 {
+/* common.js에서 호버 효과를 주었기에 삭제 */
+/* .logonav .depth1>li:hover .depth2 {
     display: block;
     z-index: 999999;
-}
+} */
 
 .logonav .nav .depth2 .borderb {
     border-bottom: 1px dotted #666;
