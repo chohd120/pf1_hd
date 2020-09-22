@@ -5,7 +5,7 @@
             <div class="companyBox">
                 <h1>COMPANY</h1>
                 <a href="introduction.html">
-                    <P>회사소개</P>
+                    <p>회사소개</p>
                 </a>
                 <a href="location.html">
                     <P>오시는길</P>
@@ -21,3 +21,11 @@
                     TEL : 02ㆍ0000ㆍ3000 &nbsp;&nbsp; • FAX : 02ㆍ0000ㆍ3000
                 </p>
             </div>
+            <script>
+                $('.companyBox > a').on('click', function () {
+                    var url = $(this).attr('href')
+                    $('#container').remove()
+                    $('#containerBox').load(url);
+                    return false
+                });
+            </script>

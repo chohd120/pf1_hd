@@ -20,25 +20,28 @@
 
   $("#containerBox").load("main.html");
 
-  $('.nav .depth1 > li > a').on('click', function () {
-    var url = $(this).attr('href')
-    $('#container').remove()
-    $('#containerBox').load(url);
-    return false
+  $(".nav .depth1 > li > a").on("click", function () {
+    var url = $(this).attr("href");
+    $("#container").remove();
+    $("#containerBox").load(url);
+    return false;
   });
 
-  $('.nav .depth2 > li > a').on('click', function () {
-    var url = $(this).attr('href')
-    $('#container').remove()
-    $('#containerBox').load(url);
-    return false
-  })
+  $(".nav .depth2 > li > a").on("click", function () {
+    var url = $(this).attr("href");
+    $("#container").remove();
+    $("#containerBox").load(url);
+    return false;
+  });
 
-  $('.companyPage .companyBox > a').on('click', function () {
-    var url = $(this).attr('href')
-    $('#container').remove()
-    $('#containerBox').load(url);
-    return false
-  })
-
+  $('.depth1 > li').hover(
+    function () {
+      $(this).find('.depth2')
+        .stop().slideDown(700)
+    },
+    function () {
+      $(this).find('.depth2')
+        .stop().slideUp(500)
+    }
+  )
 })(jQuery);

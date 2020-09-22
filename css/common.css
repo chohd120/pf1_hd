@@ -41,6 +41,14 @@
     text-align: right;
 }
 
+.topmenu .member a {
+    transition: all 0.5s;
+}
+
+.topmenu .member a:hover {
+    color: #fff;
+}
+
 .topmenu .member a::before {
     content: '|';
     padding: 0 10px;
