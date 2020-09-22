@@ -44,4 +44,28 @@
         .stop().slideUp(300)
     }
   )
+
+  var sct;
+  $(window).scroll(function () {
+    sct = $(this).scrollTop()
+
+    if ($('#container').children().is('#section')) {
+      mainScroll()
+    }
+
+
+
+
+  })
+
+  function mainScroll() {
+    var serviceNear = $('.service').offset().top - $(window).height() / 2
+    if (sct >= serviceNear) {
+      $('.content').addClass('on')
+    } else if (sct === 0) {
+      $('.content').removeClass('on')
+    }
+  }
+
+
 })(jQuery);
