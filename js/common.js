@@ -45,11 +45,12 @@
     }
   )
 
+  //스크롤 이벤트
   var sct;
   $(window).scroll(function () {
     sct = $(this).scrollTop()
 
-    if ($('#container').children().is('#section')) {
+    if ($('#container').children().is('#mainsection')) {
       mainScroll()
     }
 
