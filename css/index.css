@@ -203,13 +203,6 @@
 
 
 /* --------------------- ideology ----------------------*/
-/* .ideology {
-    height: 350px;
-} */
-
-.ideology img {
-    width: 100%;
-}
 
 .interactive,
 .emotion,
@@ -217,6 +210,21 @@
     float: left;
     position: relative;
     width: 33.33%;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.interactive {
+    background-image: url(../images/con_08_1.jpg);
+}
+
+.emotion {
+    background-image: url(../images/con_08_2.jpg);
+}
+
+.essential {
+    background-image: url(../images/con_08_3.jpg);
 }
 
 
