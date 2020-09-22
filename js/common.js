@@ -68,5 +68,14 @@
     }
   }
 
+  function mainScroll() {
+    var ideologyNear = $('.ideology').offset().top - $(window).height() / 2
+    if (sct >= ideologyNear) {
+      $('.marketing').addClass('on')
+    } else if (sct === 0) {
+      $('.marketing').removeClass('on')
+    }
+  }
+
 
 })(jQuery);

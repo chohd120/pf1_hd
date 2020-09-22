@@ -284,6 +284,31 @@
     margin-top: 10px;
 }
 
+.ideology .marketing {
+    overflow: hidden;
+}
+
+.ideology .marketing .interactive,
+.ideology .marketing .emotion,
+.ideology .marketing .essential {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+}
+
+.ideology.on .marketing .interactive {
+    animation: fadeInUp 1s both 0s;
+}
+
+.ideology.on .marketing .emotion {
+    animation-delay: 0.5s;
+}
+
+.ideology.on .marketing .essential {
+    animation-delay: 1s;
+}
+
+
 
 
 /* --------------------- board ----------------------*/
