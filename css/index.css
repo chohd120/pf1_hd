@@ -203,14 +203,12 @@
 
 
 /* --------------------- ideology ----------------------*/
+/* .ideology {
+    height: 350px;
+} */
+
 .ideology img {
     width: 100%;
-}
-
-.interactive,
-.emotion,
-.essential {
-    position: relative;
 }
 
 .interactive,
@@ -220,6 +218,7 @@
     position: relative;
     width: 33.33%;
 }
+
 
 .overlay {
     position: absolute;
@@ -243,6 +242,18 @@
     background: rgba(0, 0, 0, 0.7);
 }
 
+.interactive:hover .text {
+    top: 48%;
+}
+
+.emotion:hover .text {
+    top: 48%;
+}
+
+.essential:hover .text {
+    top: 48%;
+}
+
 .ideology .text {
     position: absolute;
     top: 50%;
@@ -251,6 +262,7 @@
     color: #fff;
     text-align: center;
     font-weight: 600;
+    transition: all 0.5s;
 }
 
 .ideology h3 {
