@@ -63,9 +63,9 @@
 
     var ideologyNear = $(".ideology").offset().top - $(window).height() / 2;
     if (sct >= ideologyNear) {
-      $(".marketing").addClass("on");
+      $(".ideology").addClass("on");
     } else if (sct === 0) {
-      $(".marketing").removeClass("on");
+      $(".ideology").removeClass("on");
     }
   }
 })(jQuery);
