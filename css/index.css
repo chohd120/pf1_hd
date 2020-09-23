@@ -281,28 +281,28 @@
   margin-top: 10px;
 }
 
-.ideology .marketing {
+.ideology .ideologyWrap {
   overflow: hidden;
 }
 
-.ideology .marketing .interactive,
-.ideology .marketing .emotion,
-.ideology .marketing .essential {
+.ideology .ideologyWrap .interactive,
+.ideology .ideologyWrap .emotion,
+.ideology .ideologyWrap .essential {
   opacity: 0;
-  -webkit-transform: translate3d(0, 100%, 0);
-  transform: translate3d(0, 100%, 0);
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
 }
 
-.ideology.on .marketing .interactive {
-  animation: fadeInUp 1s both 0s;
+.ideology.on .ideologyWrap .interactive {
+  animation: fadeInLeft 1s both 0s;
 }
 
-.ideology.on .marketing .emotion {
-  animation: fadeInUp 1s both 0.5s;
+.ideology.on .ideologyWrap .emotion {
+  animation: fadeInLeft 1s both 0.5s;
 }
 
-.ideology.on .marketing .essential {
-  animation: fadeInUp 1s both 1s;
+.ideology.on .ideologyWrap .essential {
+  animation: fadeInLeft 1s both 1s;
 }
 
 /* --------------------- board ----------------------*/
