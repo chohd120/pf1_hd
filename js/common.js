@@ -34,48 +34,38 @@
     return false;
   });
 
-  $('.depth1 > li').hover(
+  $(".depth1 > li").hover(
     function () {
-      $(this).find('.depth2')
-        .stop().slideDown(300)
+      $(this).find(".depth2").stop().slideDown(300);
     },
     function () {
-      $(this).find('.depth2')
-        .stop().slideUp(300)
+      $(this).find(".depth2").stop().slideUp(300);
     }
-  )
+  );
 
   //스크롤 이벤트
   var sct;
   $(window).scroll(function () {
-    sct = $(this).scrollTop()
+    sct = $(this).scrollTop();
 
-    if ($('#container').children().is('#mainsection')) {
-      mainScroll()
+    if ($("#container").children().is("#mainsection")) {
+      mainScroll();
     }
-
-
-
-
-  })
+  });
 
   function mainScroll() {
-    var serviceNear = $('.service').offset().top - $(window).height() / 2
+    var serviceNear = $(".service").offset().top - $(window).height() / 2;
     if (sct >= serviceNear) {
-      $('.content').addClass('on')
+      $(".content").addClass("on");
     } else if (sct === 0) {
-      $('.content').removeClass('on')
+      $(".content").removeClass("on");
     }
-  }
 
-  function mainScroll() {
-    var ideologyNear = $('.ideology').offset().top - $(window).height() / 2
+    var ideologyNear = $(".ideology").offset().top - $(window).height() / 2;
     if (sct >= ideologyNear) {
-      $('.marketing').addClass('on')
+      $(".marketing").addClass("on");
     } else if (sct === 0) {
-      $('.marketing').removeClass('on')
+      $(".marketing").removeClass("on");
     }
   }
-
-
 })(jQuery);
