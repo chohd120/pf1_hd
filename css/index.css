@@ -1,31 +1,66 @@
 @charset "utf-8";
 
-.slide {
+.slideInner {
   width: 100%;
   height: 1098px;
   overflow: hidden;
 }
 
-.slide .slideinner {
+.slideInner .slide {
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
   height: 1098px;
 }
 
-.slide .slideinner:nth-child(1) {
+.slideInner .slide.slick-active {
+  animation: zoomOutmain 3s both;
+}
+
+/* Zooming exits */
+@-webkit-keyframes zoomOutmain {
+  from {
+    opacity: 1;
+    -webkit-transform: scale3d(1.2, 1.2, 1.2);
+    transform: scale3d(1.2, 1.2, 1.2);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+}
+
+@keyframes zoomOutmain {
+  from {
+    opacity: 1;
+    webkit-transform: scale3d(1.2, 1.2, 1.2);
+    transform: scale3d(1.2, 1.2, 1.2);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+}
+
+.slideInner .slide1 {
   background-image: url(../images/main_01.jpg);
 }
 
-.slide .slideinner:nth-child(2) {
+.slideInner .slide2 {
   background-image: url(../images/main_02.jpg);
 }
 
-.slide .slideinner:nth-child(3) {
+.slideInner .slide3 {
   background-image: url(../images/main_03.jpg);
 }
 
-.slide .text {
+.slideInner .text {
   text-align: center;
   position: absolute;
   top: 50%;
@@ -34,15 +69,15 @@
   color: white;
 }
 
-.slide .text h1 {
+.slideInner .text h1 {
   font-size: 63px;
 }
 
-.slide .text h1 > span {
+.slideInner .text h1>span {
   font-weight: normal;
 }
 
-.slide .text .btn button {
+.slideInner .text .btn button {
   font-size: 14px;
   padding: 3px 0;
   font-weight: 600;
@@ -55,7 +90,7 @@
   transition: all 0.5s;
 }
 
-.slide .text .btn:hover button {
+.slideInner .text .btn:hover button {
   background: #000;
   border: none;
   opacity: 0.7;
@@ -128,8 +163,8 @@
   padding: 0 50px;
 }
 
-.service .box_first > h1,
-.service .box_third > h1 {
+.service .box_first>h1,
+.service .box_third>h1 {
   font-weight: 600;
   font-size: 30px;
   color: #222;
@@ -139,8 +174,8 @@
   margin-top: 20px;
 }
 
-.service .box_first > p,
-.service .box_third > p {
+.service .box_first>p,
+.service .box_third>p {
   font-size: 15px;
   margin: 20px 0 10px;
   color: #666;
@@ -325,7 +360,7 @@
   border-bottom: 1px solid #ccc;
 }
 
-.board h2 > a {
+.board h2>a {
   font-size: 12px;
   font-weight: normal;
 }
