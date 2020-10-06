@@ -2,35 +2,34 @@
 <html lang="ko">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>윈도우팝업입니다</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" />
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/jquery-migrate-1.4.1.min.js"></script>
     <script src="js/jquery.cookie.js"></script>
-
 </head>
 
 <body>
-
     <div id="popupBox">
         <div class="popupImg">
             <h1>Click here<i class="far fa-hand-point-down"></i></h1>
         </div>
+        <div class="btnBox">
+            <input type="checkbox" />오늘하루 이 창을 열지 않습니다
+            <button type="button">X</button>
+        </div>
     </div>
-    <div class="btnBox">
-        <input type="checkbox">오늘하루 이 창을 열지 않습니다
-        <button type="button">X</button>
-    </div>
-    </div>
-
-
-
 
     <style>
+        #popupBox {
+            height: 700px;
+            position: relative
+        }
+
         #popupBox .popupImg {
-            background-image: url(../images/popup.jpg);
+            background-image: url(images/popup.jpg);
             background-repeat: no-repeat;
             background-size: cover;
             width: 640px;
@@ -42,7 +41,7 @@
             color: #ddd;
             position: absolute;
             bottom: 70px;
-            right: 20px;
+            right: 15px;
         }
 
         #popupBox i {
@@ -62,17 +61,16 @@
     </style>
 
     <script>
-        $('#popupBox button').on('click', function () {
-            var bool = $('#popupBox input').prop('checked')
+        $("#popupBox button").on("click", function () {
+            var bool = $("#popupBox input").prop("checked");
             if (bool) {
-                $.cookie('pop', 'none', {
-                    expires: 1
-                })
+                $.cookie("pop", "none", {
+                    expires: 1,
+                });
             }
-            window.close()
-        })
+            window.close();
+        });
     </script>
-
 </body>
 
 </html>
