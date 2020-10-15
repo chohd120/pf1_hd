@@ -367,11 +367,11 @@
 }
 
 .board .pmore {
-  margin-left: 205px;
+  padding-left: 190px;
 }
 
 .board .nmore {
-  margin-left: 305px;
+  padding-left: 300px;
 }
 
 .board .nmore .board .marketing h2 {

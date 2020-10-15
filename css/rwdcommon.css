@@ -74,11 +74,11 @@
     border-bottom: 1px solid #ccc;
   }
   .board .pmore {
-    margin-left: 160px;
+    padding-left: 150px;
   }
   
   .board .nmore {
-    margin-left: 250px;
+    padding-left: 240px;
   }
 
   .board .gallery a img {
@@ -90,11 +90,11 @@
 
 @media screen and (max-width: 1100px) {
   .board .pmore {
-    margin-left: 125px;
+    padding-left: 120px;
   }
   
   .board .nmore {
-    margin-left: 210px;
+    padding-left: 210px;
   }
 
   .board .gallery a img {
@@ -127,7 +127,6 @@
       top: 0;
       right: 2%;
     }
-}
 
 .service {
   padding: 30px 20px;
@@ -153,16 +152,21 @@
 }  
 
 .board .pmore {
-  margin-left: 50px;
+  padding-left: 50px;
 }
 
 .board .nmore {
-  margin-left: 130px;
+  padding-left: 125px;
 }
 
 .board .gallery a img {
   width: 31%;
   margin: 0 0.2%;
+}
+
+.notice td:last-child {
+  display: none;
+}
 }
 
 @media screen and (max-width: 767px) {
