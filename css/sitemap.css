@@ -1,0 +1,11 @@
+@charset "utf-8";
+@import "reset.css";
+@import "common.css";
+
+.smapbg {
+    width: 100%;
+    height: 300px;
+    background-image: url(../images/bizbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}

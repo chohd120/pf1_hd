@@ -16,29 +16,28 @@
     z-index: 99999;
 }
 
-.topmenu .cf {
+.topmenu {
     height: 40px;
     padding: 10px 15px 0 15px;
 }
-
-.topmenu .phone {
+.topline {
+    position: relative;
+}
+.topline .sns, 
+.topline .phone{
     float: left;
 }
-
-/*float:right는 뒤집힌다 */
-.topmenu .sns {
-    float: left;
+.topline .phone {
+    margin-left: 50px;
 }
 
+.topline .member {
+    float: right;
+    font-size: 13px;
+    padding-right: 50px;
+}
 .topmenu .sns a {
     margin: 5px;
-}
-
-.topmenu .member {
-    float: left;
-    padding-left: 100px;
-    font-size: 13px;
-    text-align: right;
 }
 
 .topmenu .member a {
@@ -64,32 +63,29 @@
     margin-right: 20px;
 }
 
-.topline {
-    float: right;
-}
+
 
 .logonav {
-    border-top: 1px dotted rgba(180, 180, 180, 0.5);
+    border-top: 1px dotted rgba(180, 180, 180, 0.4);
+    position: relative;
 }
 
 .logonav h1 {
     height: 70px;
     line-height: 70px;
-    width: 20%;
-    float: left;
 }
 
-
-/* .logonav .h1nav .logo_area p img {vertical-align: middle;} */
 .logonav .nav {
-    float: right;
-    width: 70%;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .logonav .nav .depth1>li {
-    float: left;
+    display: inline-block;
     position: relative;
     transition: all 0.5s;
+    right: 40%;
 }
 
 .logonav .nav .depth1>li:hover {
@@ -98,11 +94,10 @@
 
 .logonav .nav .depth1>li>a {
     text-align: center;
-    font: 15px;
     font-weight: 600;
-    display: block;
-    padding: 0 50px;
+    padding: 0 10px 0 80px;
     line-height: 70px;
+    display: inline-block;
 }
 
 .logonav .depth2 {
@@ -112,7 +107,7 @@
     left: 0%;
     width: 100%;
     color: rgb(180, 180, 180, 1);
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.6);
 }
 
 .logonav .nav .depth2>li {
@@ -163,7 +158,7 @@
 .footerwrap>.info,
 .footerwrap>.sns {
     float: left;
-    padding: 0 15px;
+    padding-left: 50px;
     width: 33.33%;
 }
 

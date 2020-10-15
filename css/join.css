@@ -9,7 +9,7 @@
 #joinpage h1 {
     margin: 50px 0 50px;
     text-indent: 4em;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 #joinpage h2 {
@@ -51,12 +51,14 @@
 }
 
 .info_content button {
+    width: 120px;
     background: #D7BA9A;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 13px;
     height: 25px;
     color: white;
+    display: inline-block;
 }
 
 .info_content button i {

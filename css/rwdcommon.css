@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+@media screen and (max-width: 1180px) {
+    .row {padding: 0 10px;}
+    .slideInner {
+        width: 100%;
+        height: 800px;
+        overflow: hidden;
+      }
+      
+      .slideInner .slide {
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 800px;
+      }
+
+    .topmenu {
+        height: 40px;
+        padding: 10px 15px 0 50px;
+    }
+    .topline .member {
+      float: right;
+      font-size: 13px;
+      padding-right: 10px;
+  }
+    
+    
+    .logonav .nav {
+        float: right;
+        padding-left: 100px;
+        width: 70%;
+    }
+
+    .logonav h1 {
+        height: 70px;
+        line-height: 70px;
+        width: 20%;
+        float: left;
+        padding-left: 50px;
+    }
+    .logonav .nav .depth1>li>a {
+        text-align: center;
+        font-size: 15px;
+        font-weight: 600;
+        display: block;
+        padding: 0 5px 0 50px;
+        line-height: 70px;
+    }
+
+    .service {
+        padding: 50px 20px;
+    }
+    .service .box_first,
+.service .box_third {
+  float: left;
+  width: 33.33%;
+  padding-top: 50px;
+}
+.service .box_second {
+    float: left;
+    width: 33.33%;
+    padding: 0 20px;
+  }
+
+
+.board h2 {
+    color: #555;
+    font-size: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  .board .pmore {
+    margin-left: 160px;
+  }
+  
+  .board .nmore {
+    margin-left: 250px;
+  }
+
+  .board .gallery a img {
+    width: 31%;
+    margin: 0 0.6%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+
+  .topline .member {
+    float: right;
+    font-size: 13px;
+    padding-right: 20px;
+  }  
+
+  .logonav h1 {
+    /* height: 70px;
+    line-height: 70px;
+    width: 20%; */
+    text-align: center;
+    float: none;
+}
+
+}
+
+@media screen and (max-width: 1024px) {
+    
+}
+
+@media screen and (max-width: 767px) {
+    
+}

@@ -4,8 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>로그인-pf1</title>
-    <link rel="stylesheet" href="css/login.css">
+    <title>로그인 페이지</title>
+    
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/notice.css">
+    <link rel="stylesheet" href="css/introduction.css">
+    <link rel="stylesheet" href="css/location.css">
+    <link rel="stylesheet" href="css/business.css">
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/join.css" />
+    <link rel="stylesheet" href="css/sitemap.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
 </head>
 
@@ -13,80 +25,89 @@
 
     <div id="header">
         <div class="topmenu">
-            <div class="row cf">
-                <div class="topline">
-                    <div class="phone">
-                        <span>TEL 010-234-5678</span>
-                    </div>
-                    <div class="sns">
-                        <a href="#"><i class="fab fa-facebook-square"></i></a>
-                        <a href="#"><i class="fab fa-twitter-square"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-pinterest-square"></i></a>
-                    </div>
-                    <div class="member">
-                        <a href="login.html">Log-in</a>
-                        <a href="join.html">Register</a>
-                    </div>
-                </div>
+          <div class="row cf">
+            <div class="topline">
+              <div class="sns">
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-pinterest-square"></i></a>
+              </div>
+              <div class="phone">
+                <span>TEL 010-234-5678</span>
+              </div>
+              <div class="member">
+                <a href="login.html">Log-in</a>
+                <a href="join.html">Register</a>
+                <a href="sitemap.html">Sitemap</a>
+              </div>
             </div>
+          </div>
         </div>
         <div class="logonav">
-            <div class="h1nav row cf">
-                <h1>
-                    <a href="index.html"><img src="images/logo.png" alt=""></a>
-                </h1>
-                <div class="nav">
-                    <ul class="depth1">
-                        <li><a href="#">COMPANY</a>
-                            <ul class="depth2">
-                                <li><a href="#">회사소개</a></li>
-                                <li><a href="#">오시는길</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">BUSINESS</a>
-                            <ul class="depth2">
-                                <li><a href="#">비즈니스안내</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">PRODUCT</a>
-                            <ul class="depth2">
-                                <li><a href="#">상품안내</a></li>
-                                <li><a href="#">상품안내2</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">GALLERY</a>
-                            <ul class="depth2">
-                                <li><a href="#">포토갤러리</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">CUSTOMER</a>
-                            <ul class="depth2">
-                                <li><a href="#">공지사항</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
+          <div class="h1nav row cf">
+            <h1>
+              <a href="index.html"><img src="images/logo.png" alt="" /></a>
+            </h1>
+            <div class="nav">
+              <ul class="depth1">
+                <li>
+                  <a href="introduction.html">COMPANY</a>
+                  <ul class="depth2">
+                    <li class="borderb"><a href="introduction.html">회사소개</a></li>
+                    <li><a href="location.html">오시는길</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="business.html">BUSINESS</a>
+                  <ul class="depth2">
+                    <li><a href="business.html">비즈니스안내</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">PRODUCT</a>
+                  <ul class="depth2">
+                    <li class="borderb"><a href="#">상품안내1</a></li>
+                    <li><a href="#">상품안내2</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">GALLERY</a>
+                  <ul class="depth2">
+                    <li><a href="#">포토갤러리</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="notice.html">CUSTOMER</a>
+                  <ul class="depth2">
+                    <li><a href="#">공지사항</a></li>
+                  </ul>
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
+      </div>
+
+    <div id="container">
+        <section id="login_page" class="row">
+            <fieldset>
+                <div class="loginbox">
+                    <h3>회원 로그인</h3>
+                    <input type="text" placeholder="Login ID" id="id_lbl"><br>
+                    <input type="password" placeholder="Password" id="id_lbl">
+                    <button type="submit">LOGIN</button><br>
+                    <button type="submit">아이디찾기</button><br>
+                    <button type="submit">비밀번호찾기</button><br>
+                    <button type="submit">회원가입</button><br>
+                </div>
+                <div class="enquiry">
+    
+                </div>
+            </fieldset>
+        </section>
     </div>
 
-    <section id="login_page" class="row">
-        <fieldset>
-            <div class="loginbox">
-                <h3>회원 로그인</h3>
-                <input type="text" placeholder="Login ID" id="id_lbl"><br>
-                <input type="password" placeholder="Password" id="id_lbl">
-                <button type="submit">LOGIN</button><br>
-                <button type="submit">아이디찾기</button><br>
-                <button type="submit">비밀번호찾기</button><br>
-                <button type="submit">회원가입</button><br>
-            </div>
-            <div class="enquiry">
-
-            </div>
-        </fieldset>
-    </section>
     <div id="footer">
         <div class="footerinfo">
             <div class="footerwrap row">
@@ -125,6 +146,7 @@
         </div>
     </div>
 
+    <script src="js/common.js"></script>
 </body>
 
 </html>
