@@ -17,7 +17,7 @@
 
     .topmenu {
         height: 40px;
-        padding: 10px 15px 0 50px;
+        padding: 10px 15px 0 10px;
     }
     .topline .member {
       float: right;
@@ -26,32 +26,35 @@
   }
     
     
-    .logonav .nav {
-        float: right;
-        padding-left: 100px;
-        width: 70%;
-    }
+  .logonav h1 {
+    height: 70px;
+    line-height: 70px;
+}
 
-    .logonav h1 {
-        height: 70px;
-        line-height: 70px;
-        width: 20%;
-        float: left;
-        padding-left: 50px;
-    }
-    .logonav .nav .depth1>li>a {
-        text-align: center;
-        font-size: 15px;
-        font-weight: 600;
-        display: block;
-        padding: 0 5px 0 50px;
-        line-height: 70px;
-    }
+.logonav .nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
 
-    .service {
-        padding: 50px 20px;
-    }
-    .service .box_first,
+.logonav .nav .depth1>li {
+    display: inline-block;
+    position: relative;
+    transition: all 0.5s;
+    left: 0;
+}
+.logonav .nav .depth1>li>a {
+  text-align: center;
+  font-weight: 600;
+  padding: 0 20px 0 50px;
+  line-height: 70px;
+  display: inline-block;
+}
+
+.service {
+  padding: 50px 20px;
+  }
+.service .box_first,
 .service .box_third {
   float: left;
   width: 33.33%;
@@ -84,26 +87,82 @@
   }
 }
 
+
 @media screen and (max-width: 1100px) {
+  .board .pmore {
+    margin-left: 125px;
+  }
+  
+  .board .nmore {
+    margin-left: 210px;
+  }
 
-  .topline .member {
-    float: right;
-    font-size: 13px;
-    padding-right: 20px;
-  }  
-
-  .logonav h1 {
-    /* height: 70px;
-    line-height: 70px;
-    width: 20%; */
-    text-align: center;
-    float: none;
-}
+  .board .gallery a img {
+    width: 31%;
+    margin: 0 0.5%;
+  }
 
 }
 
 @media screen and (max-width: 1024px) {
+  .topmenu {
+    height: 30px;
+    padding: 5px 10px;
     
+  }
+  .topline .phone {
+    margin-left: 20px;
+}
+  .topline .member {
+  float: right;
+  font-size: 13px;
+  padding-right: 40px;
+  }
+
+  .logonav h1{
+    text-align: center;
+  }
+    .logonav .nav {
+      position: relative;
+      top: 0;
+      right: 2%;
+    }
+}
+
+.service {
+  padding: 30px 20px;
+  }
+.service .box_first,
+.service .box_third {
+  float: left;
+  width: 33.33%;
+  padding-top: 10px;
+}
+.service .box_second {
+    float: left;
+    width: 33.33%;
+    padding: 0 15px;
+  }
+  .service .box_first>h1,
+  .service .box_third>h1 {
+    font-size: 25px;
+  }
+  .service .box_first>p,
+.service .box_third>p {
+  font-size: 14px;
+}  
+
+.board .pmore {
+  margin-left: 50px;
+}
+
+.board .nmore {
+  margin-left: 130px;
+}
+
+.board .gallery a img {
+  width: 31%;
+  margin: 0 0.2%;
 }
 
 @media screen and (max-width: 767px) {
